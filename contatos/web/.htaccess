@@ -1,0 +1,16 @@
+RewriteEngine On
+
+RewriteRule ^login$ src/controller/ControllerLogin.php [NC]
+RewriteRule ^login/(.+)$ src/controller/ControllerLogin.php?$1 [NC]
+RewriteRule ^logar$ src/controller/ControllerUsuario.php [NC]
+RewriteRule ^sair$ src/controller/ControllerUsuario.php?action=sair [NC]
+RewriteRule ^excluir$ src/controller/ControllerUsuario.php?action=excluir [NC]
+RewriteRule ^perfil$ src/controller/ControllerPerfil.php [NC]
+RewriteRule ^perfil/(.+)$ src/controller/ControllerPerfil.php?$1 [NC]
+RewriteRule ^alterarsenha$ src/controller/ControllerSenha.php [NC]
+RewriteRule ^alterarsenha/(.+)$  src/controller/ControllerSenha.php?$1 [NC]
+RewriteRule ^cadastro$ src/controller/ControllerCadastro.php [NC]
+RewriteRule ^cadastrar$ src/controller/ControllerUsuario.php [NC]
+RewriteRule ^contatos$ src/controller/ControllerContatos.php [NC]
+RewriteRule ^contatos/(.+)$ src/controller/ControllerContatos.php?$1 [NC]
+RewriteRule ^contato/(.+)$ src/controller/ControllerContato.php?$1 [NC]
